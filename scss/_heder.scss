@@ -1,3 +1,97 @@
+$color_1: #95e1d3;
+$color_2: #fce38a;
+$color_3: #f38181;
 
+.banner{
+    background-image: url("../img/baner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    max-width: 1920px;
+
+
+}
+.heder-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    @extend%mont-bold
+}
+.hder-nav {
+    display: flex;
+    width: 35%;
+    margin-left: auto;
+}
+.navbar{
+    display: flex
+}
+.li{
+    list-style: none;
+    margin-right: 10%
+    
+}
+.link-nav {
+    @extend%mont-reg;
+    text-decoration: none;
+    &:hover{
+        padding-bottom: 10px;
+        color: $color_2;
+        border-bottom: solid 3px $color_2;
+    }
+}
+.header-button{
+    margin-left: 5%;
+}
+.butn {
+    border: none;
+    background: none;
+    width: 20px;
+    height: 19px;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+    &:hover{
+        border-bottom: solid 1px $color_2;
+        cursor: pointer;
+    }
+}
+
+.basket {
+    background-image: url("../img/SHOPPING\ CART.svg");
+}
+
+.Search {
+    background-image: url("../img/MAGNIFYING\ GLASS.svg");
+    margin-left: 42px;
+    
+}
+.header-mid {
+    text-align: center;
+    padding: 0 180px;
+}
+.heder-heading {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 150px;
+    color: #ffffff;
+    line-height: 140px;
+}
+
+.heading {
+    font-family:'Kaushan Script';
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 72px;
+    
+}
+.btn-more {
+}
+.heder-botton {
+}
+.running-line {
+}
+.line {
+}
          
     
