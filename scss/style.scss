@@ -41,6 +41,18 @@
     font-size: 30px;
     color: #ffffff;
 }
+%mont-reg-text{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+}
+%mont-bold-namb{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+}
 %mont-reg{
     font-family: "Montserrat";
     font-weight: 400;
@@ -52,7 +64,10 @@ $color_2: #fce38a;
 $color_3: #f38181;
 .conteiner {
     max-width: 1200px;
-    margin: 0 auto;
-   
+    margin: 0 auto;   
 }
+// .text-b{
+//      @extend%mont-reg
+
+// }
 
