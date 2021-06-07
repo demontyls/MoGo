@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import "_heder";
+@import"_story";
+@import"_amazingService";
+@import"_devices";
+@import"_WatWeDo";
 // // @extend подключает шаблон (%)
 // //  оператор шаблон      
 //     %Название{
@@ -33,13 +37,13 @@
     font-family:'Kaushan Script';
     font-weight: 400;
     font-size: 24px;
-    color: #95e1d3;
+    color: #363636;
 }
 %mont-bold{
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 30px;
-    color: #ffffff;
+    color: #363636;
 }
 %mont-reg-text{
     font-family: "Montserrat";
@@ -66,6 +70,15 @@ $color_3: #f38181;
     max-width: 1200px;
     margin: 0 auto;   
 }
+// .heading{
+//     @extend%mont-bold;
+    
+
+
+//     .top-heading{
+//         @extend%kaushan;
+//     }
+// }
 // .text-b{
 //      @extend%mont-reg
 

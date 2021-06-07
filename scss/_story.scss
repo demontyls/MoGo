@@ -1,0 +1,147 @@
+$color_1: #95e1d3;
+$color_2: #fce38a;
+$color_3: #f38181;
+@mixin button ( $c,$bc) {
+    color: $c;
+    border: $bc;
+}
+
+
+.heading{
+    @extend%mont-bold;
+
+    &::after {
+        content: '';
+        width: 60px;
+        height: 3px;
+        display: block;
+        background-color:$color_3;
+        margin: 0 auto;
+        margin-top: 40px;
+    
+    }   
+    
+        .top-heading{
+             @extend%kaushan;
+    }
+}
+.story {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.text {
+    @extend%robo-reg
+}
+.team-img {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.story-img-a,.story-img-b,.story-img-c {
+    width: 30%;
+    background-size: 100%;
+    height: 237px;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+
+        &:hover{
+            box-shadow: 10px 10px 0px  #95e1d3;
+            top: -10px;
+            left: -10px;
+            transition: 500ms;
+            
+        }
+
+        &::after{
+            content: "";
+	        opacity: 0;
+            transition: opacity 0.7s ease-in-out;
+        }
+        &:hover:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;    
+            position: absolute;
+            top: 0;    
+            left: 0;   
+            background: transparent;
+            background-image: linear-gradient(to top, $color_2, $color_3);    
+            opacity: 0.8;   
+            
+            
+
+        }
+        &:hover:before {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 52px;
+            margin: -26px 0 0 -26px;  
+            position: absolute;    
+            top: 50%;
+            left: 40%;    
+            background: url(../img/1.svg) 0 0 no-repeat;
+            z-index: 100;
+
+        }
+    
+}
+.story-img-a {
+    background-image: url(../img/story-1.jpg);
+}
+
+.story-img-b {
+    background-image: url(../img/story-2.jpg);
+    
+}
+
+.story-img-c {
+    background-image: url(../img/story-3.jpg);
+       
+}
+
+.back-line {
+    background-image: url(../img/border.svg);
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.statistics-line {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+.statistics {
+    display: flex;
+    justify-content:space-between;
+    padding: 0;
+    
+}
+.stat-box {
+    width: 15%;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.stat-box:not(:last-child){
+    border-right: solid 1px #fff;
+    padding-right: 40px;
+}
+.namb {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 72px;
+    color: #fff;
+    margin-bottom: 25px
+
+}
+.stat-text {
+    @extend%mont-reg;
+    padding-bottom: 80px;
+}

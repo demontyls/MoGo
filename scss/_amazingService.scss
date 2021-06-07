@@ -1,0 +1,56 @@
+.amazing-services {
+    padding:90px 0 ;
+    text-align: center;
+}
+.top-heading {
+}
+.services-card {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 33% 33% 33%;
+}
+.card {
+    text-align: left;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.card-name {
+    margin: auto;
+}
+.card-text {
+}
+.text {
+
+}
+.card-left{
+    width: 70%;
+}
+.card-img-1,
+.card-img-2,
+.card-img-3,
+.card-img-4,
+.card-img-5,
+.card-img-6{
+    width: 32px;
+    height: 32px;
+    background-size: 100%;
+}
+.card-img-1 {
+    background-image: url(../img/amaz-1.svg);;      
+}
+.card-img-2 {
+    background-image: url(../img/amaz-2.svg);
+}
+.card-img-3 {
+    background-image: url(../img/Ama-3.svg);
+}
+.card-img-4 {
+    background-image: url(../img/amaz-4.svg);
+}
+.card-img-5 {
+    background-image: url(../img/amaz-5.svg);
+}
+.card-img-6 {
+    background-image: url(../img/amaz-6.svg);
+}
