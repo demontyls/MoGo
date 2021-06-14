@@ -31,7 +31,9 @@ $color_3: #f38181;
 }
 
 .text {
-    @extend%robo-reg
+    @extend%robo-reg;
+    margin:auto;
+    max-width: 900px;
 }
 .team-img {
     display: flex;

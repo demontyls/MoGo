@@ -17,6 +17,7 @@
 }
 .card-name {
     margin: auto;
+    @extend%mont-reg-name;
 }
 .card-text {
 }

@@ -6,6 +6,8 @@
 @import"_amazingService";
 @import"_devices";
 @import"_WatWeDo";
+@import"_team";
+@import"_work";
 // // @extend подключает шаблон (%)
 // //  оператор шаблон      
 //     %Название{
@@ -62,6 +64,14 @@
     font-weight: 400;
     font-size: 14px;
     color: #ffffff;
+}
+
+%mont-reg-name{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+
 }
 $color_1: #95e1d3;
 $color_2: #fce38a;
