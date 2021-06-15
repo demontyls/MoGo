@@ -787,7 +787,62 @@
   display: none;
 }
 
-.text {
+.people {
+  padding-top: 110px;
+  margin: 90px auto 90px auto;
+  background-image: url(../img/baner-story.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1920px;
+  text-align: center;
+}
+
+.clients-box {
+  max-width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+.people-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 540px;
+  margin: 45px 35px;
+}
+
+.avatar {
+  height: 100%;
+  border-radius: 100%;
+}
+
+.people-info {
+  margin-left: 5%;
+  text-align: left;
+}
+
+.profession {
+  font-style: italic;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.profession::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #f38181;
+  top: 40px;
+  left: 0;
+}
+
+.text, .profession {
   font-family: "roboto";
   font-weight: 400;
   color: #999999;
@@ -838,7 +893,7 @@
   color: #ffffff;
 }
 
-.card-name, .personal-name {
+.card-name, .personal-name, .people-name {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;

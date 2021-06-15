@@ -1,0 +1,58 @@
+.people {
+    padding-top: 110px;
+    margin: 90px auto 90px auto;
+    background-image: url(../img/baner-story.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1920px;
+    text-align: center;
+}
+.wwd-heading {
+}
+.heading {
+}
+.top-heading {
+}
+.clients-box {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin:  0 auto;
+    padding-bottom: 120px;
+    // grid-column-gap: 90px;
+    // grid-row-gap: 70px;
+}
+.people-card {
+    display: flex;
+    max-width: 540px;
+    margin: 45px 35px;
+}
+.avatar {
+    height: 100%;
+    border-radius: 100%;
+}
+.people-info {
+    margin-left: 5%;
+    text-align: left
+}
+.people-name {
+    @extend%mont-reg-name;
+}
+.profession {
+    @extend%robo-reg;
+    font-style: italic;
+    position: relative;
+    margin-bottom: 40px;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        background-color:#f38181 ;
+        top: 40px;
+        left: 0;
+    }
+}
+.text {
+}
