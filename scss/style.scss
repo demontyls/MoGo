@@ -9,6 +9,9 @@
 @import"_team";
 @import"_work";
 @import"_people";
+@import"_blog";
+@import"_map";
+@import"_footer";
 // // @extend подключает шаблон (%)
 // //  оператор шаблон      
 //     %Название{
@@ -80,6 +83,9 @@ $color_3: #f38181;
 .conteiner {
     max-width: 1200px;
     margin: 0 auto;   
+}
+.body{
+    margin: 0;
 }
 // .heading{
 //     @extend%mont-bold;

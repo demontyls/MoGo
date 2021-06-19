@@ -31,8 +31,8 @@
     display:none;
 }
 .accordion {
-   border-left: 1px solid #989898;
-   border-right: 1px solid #989898;
+   border-left: 2px solid rgba(153,153, 153, 0.15);
+   border-right: 2px solid rgba(153,153, 153, 0.15);
     width: 49%;
     height: 390px;
 }
@@ -44,8 +44,8 @@
     // overflow: auto;
 }
 .acc-card-name {
-    border-top : 1px solid #989898;
-    border-bottom: 1px solid #989898;
+    border-top : 2px solid rgba(153,153, 153, 0.15);
+    border-bottom: 2px solid rgba(153,153, 153, 0.15);
     text-align: left;
     background-image: url(../img/img-name-1.svg);
     background-repeat: no-repeat;
@@ -96,9 +96,9 @@
     padding-right: 25px;
 }
 .acc-box-text{
-    padding: 4% 4% 4% 4%; 
+    padding: 4% 4% 3% 4%; 
     display: none;
-    border-bottom: 1px solid #989898;
+    border-bottom: 2px solid rgba(153,153, 153, 0.15);
 }
 .active.acc-box-text{
     display: block;

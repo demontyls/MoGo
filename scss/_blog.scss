@@ -1,0 +1,91 @@
+.blog {
+    max-width: 1200px;
+    margin: 100px auto 100px auto;
+    text-align: center;
+}
+.blog-box{
+ display: flex;
+ text-align: left;
+}
+.blog-card{
+   
+
+}
+
+
+
+.blog-name {
+    @extend%mont-reg-name;
+}
+.blog-img {
+    width: 95%;
+    height: 250px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.blog-a {
+    background-image: url(../img/blogimg1.jpg);
+
+}
+.blog-b {
+    background-image: url(../img/blokimg2.jpg);
+
+}
+.blog-c {
+    background-image: url(../img/blogimg3.jpg);
+
+}
+.day {
+    position: absolute;
+    top: 150px;
+    left: -10px;
+    text-align: right;
+    padding: 15px 18px 15px 15px;
+    width: 8%;
+    background-color: #95e1d3;
+}
+.day-namb {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff;
+}
+.month {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    font-style: italic;
+}
+.border-bottom {
+    margin-left: 0px;
+    width: 95%;
+    padding-bottom: 25px;
+    border-bottom: 2px solid  rgba(153,153, 153, 0.15);
+    margin-bottom: 20px;
+    
+
+}
+.views {
+    padding-left: 27px;
+    width: 80%;
+    background-image: url(../img/VIEWs.svg);
+    // background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 40%;
+    font-style: italic;
+}
+.cloud {
+    background-size: 40%;
+    margin-left: 10px;
+    padding-left: 27px;
+    width: 80%;
+    background-image: url(../img/BUBBLE2.svg);
+    // background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    font-style: italic;
+
+}

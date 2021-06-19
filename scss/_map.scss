@@ -1,0 +1,37 @@
+.map{
+    max-width: 1920px;
+    margin: 100px auto 0 auto;
+    background-image: url(../img/map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.heading-map{
+    margin: 0;
+    padding: 48px 0;
+    font-size: 25px;
+    font-family: "Montserrat";
+    color: #f38181;
+
+        &::after{
+            content: "";
+            width: 60px;
+            height: 3px;
+            display: block;
+            background-color: #f38181;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        &::before{
+            content: "";
+            background-image: url(../img/PIN.svg);
+            background-repeat: no-repeat;
+            display: block;
+            width: 20px;
+            height: 30px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            
+        }
+}
