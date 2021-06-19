@@ -45,11 +45,9 @@
 }
 
 .link-nav:hover {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   color: #fce38a;
-  border-bottom: solid 3px #fce38a;
-  -webkit-transition: 800ms;
-  transition: 800ms;
+  border-bottom: solid 2px #fce38a;
 }
 
 .header-button {

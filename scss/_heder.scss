@@ -47,10 +47,10 @@ $color_3: #f38181;
     text-decoration: none;
 
     &:hover{
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         color: $color_2;
-        border-bottom: solid 3px $color_2;
-        transition: 800ms;
+        border-bottom: solid 2px $color_2;
+        // transition: 800ms;
     }
 }
 
