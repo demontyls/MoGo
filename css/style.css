@@ -1119,7 +1119,7 @@
 }
 
 .footer-button {
-  border: solid #95e1d3 3px;
+  border: none;
   background-color: #95e1d3;
   font-family: "Montserrat";
   font-weight: 700;
@@ -1128,6 +1128,18 @@
   width: 30%;
   height: 40px;
   margin-left: -5px;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.footer-button:hover {
+  border: 1px solid #95e1d3;
+  background-color: #f8f8f8;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #999;
 }
 
 .box-blogs {

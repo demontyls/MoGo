@@ -103,7 +103,7 @@
 
  }
  .footer-button {
-    border: solid #95e1d3 3px;
+    border: none;
     background-color: #95e1d3;
     font-family: "Montserrat";
     font-weight: 700;
@@ -112,6 +112,23 @@
     width: 30%;
     height: 40px;
     margin-left: -5px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+
+
+        &:hover{
+            border: 1px solid #95e1d3;
+            background-color: #f8f8f8;
+            transition: 1s;    
+            color: #999;
+
+
+            // background-color: rgba(149, 225, 211, 0.85);
+            // border: 10px;
+            // transition:  0.7s;
+        }
  }
 
 
