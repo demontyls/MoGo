@@ -55,3 +55,38 @@
 .card-img-6 {
     background-image: url(../img/amaz-6.svg);
 }
+@media(max-width: 1100px) {
+    .amazing-services{
+        padding: 70px 0;
+    }
+}
+@media(max-width: 920px) {
+    .amazing-services{
+        padding: 50px 0;
+    }
+
+}
+
+@media(max-width: 720px) {
+    .amazing-services{
+        padding: 30px 0;
+    }
+    .services-card{
+        grid-template-columns: 50% 50%;
+    }
+
+}
+
+@media(max-width: 520px) {
+    .amazing-services{
+        padding: 20px 0;
+    }
+    .card-text{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .card-name{
+        font-size: 12px;
+    }
+
+}
