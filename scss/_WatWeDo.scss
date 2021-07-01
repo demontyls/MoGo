@@ -3,6 +3,11 @@
     margin: 0 auto;
     text-align: center;
 }
+.wwd-text {
+    max-width: 900px;
+    margin: auto;
+    
+}
 .box-accordion {
     margin: 7% auto 10% auto;
     display: flex;
@@ -14,8 +19,8 @@
 }
 .acc-photo-1,.acc-photo-2,.acc-photo-3{
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    background-position-x: 25%;
+    background-size: cover;
     width: 100%;
     height: 390px;
 }
@@ -96,7 +101,7 @@
     padding-right: 25px;
 }
 .acc-box-text{
-    padding: 4% 4% 3% 4%; 
+    padding: 21px 20px 19px 20px; 
     display: none;
     border-bottom: 2px solid rgba(153,153, 153, 0.15);
 }
@@ -152,7 +157,7 @@
     
 }
 .comment-box{
-    max-width: 745px;
+    max-width: 65%;
 }
 .comment-text {
     margin: 0;
@@ -188,4 +193,102 @@
 
 
     }
+}
+
+
+
+@media(max-width: 920px){
+    .comment-text {
+        font-size: 20px;
+    }
+
+    .slider-box{
+        padding: 50px 0 50px 0;
+    }
+
+
+
+}
+
+@media(max-width: 700px){
+    .comment-text {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .author{
+        font-size: 20px;
+    }
+
+    .slider-box{
+        padding: 30px 0 30px 0;
+    }
+    .message-img{
+        background-size: 90%;
+    }
+
+
+
+
+}
+@media(max-width: 600px){
+    .box-accordion{
+        display: block;
+    }
+
+
+    .photo-accordion {
+        width: 90%;
+        margin: auto;
+    
+         .acc-photo-1 {
+            background-size: 100%;
+            height: 220px;
+        }
+    }
+    .accordion {
+        width: 90%;
+        margin: 10px auto;
+
+    }
+    .comment-text {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+    .author{
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+
+    .slider-box{
+        padding: 20px 0 20px 0;
+    }
+    .message-img{
+        background-size: 90%;
+        width: 110px;
+        height: 110px;
+    }
+
+}
+
+@media(max-width: 400px){
+    .comment-text {
+        font-size: 9px;
+        line-height: 14px;
+        margin-bottom: 0;
+    }
+    .author{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .slider-box{
+        padding: 10px 0 10px 0;
+    }
+    .message-img{
+        background-size: 90%;
+        width: 55px;
+        height: 55px;
+    }
+
 }

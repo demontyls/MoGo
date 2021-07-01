@@ -48,7 +48,7 @@
     }
 }
 .gallery-box{
-    width: 25%;
+    width: 50%;
     display: block;
 }
 .gallery-photo-men{
@@ -103,4 +103,82 @@
 }
 .comment-c {
     display: none;
+}
+.gallery-box-mobil {
+    width: 100%;
+    display: flex;
+}
+
+
+@media(max-width: 1200px) {
+    .slider-box{
+        padding:  50px 0 50px 0;
+    }
+    .work-img{
+        width: 224px;
+        height: 224px;
+    }
+}
+
+@media(max-width: 900px) {
+    .slider-box{
+        padding:  25px 0 25px 0;
+    }
+    .work-img{
+        width: 184px;
+        height: 184px;
+    }
+    .work {
+        margin-bottom: 45px;
+    }
+}
+
+@media(max-width: 700px){
+    .gallery {
+        height: 250px;
+    }
+    .gallery-photo-jellyfish {
+        height: 500px;
+    }
+    .slider-box{
+        padding:  15px 0 15px 0;
+    }
+    .work-img{
+        width: 154px;
+        height: 154px;
+    }
+    
+
+}
+@media(max-width: 550px) {
+    .work-backgraund{
+        display: block;
+    }
+
+    .gallery-box-mobil {
+        margin: auto;
+    }
+    .slider-box{
+        padding:  10px;
+    }
+    .work-img{
+        width: 104px;
+        height: 104px;
+    }
+
+}
+
+@media(max-width: 400px) {
+    .gallery {
+        height: 200px;
+    }
+    .gallery-photo-jellyfish {
+        height: 400px;
+    }
+
+    .work-img{
+        width: 74px;
+        height: 74px;
+    }
+
 }
