@@ -1,7 +1,28 @@
 
+
+
+
+document.querySelector('.burger').addEventListener('click', function(){
+  document.querySelector('.burger-btn').classList.toggle('active');
+  document.querySelector('.header-nav').classList.toggle('active');
+})
+
+document.querySelector('.search').addEventListener('click', function(){
+  document.querySelector('.search-heder').classList.toggle('active');
+  document.querySelector('.search').classList.toggle('active');
+})
+
+
+
+
+
+
+
+
 const accBtn = document.querySelectorAll(".acc-card-name");
 const accTextr = document.querySelectorAll(".acc-box-text");
-const accButtonRem = document.querySelectorAll(".acc-btn")
+const accButtonRem = document.querySelectorAll(".acc-btn");
+const headerNav = document.querySelectorAll(".header-nav");
 
 
       accBtn.forEach(function(item) {
@@ -15,6 +36,7 @@ const accButtonRem = document.querySelectorAll(".acc-btn")
         
             
             
+
             accBtn.forEach(function(item){
               item.classList.remove('active');
 
