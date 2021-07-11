@@ -10,15 +10,18 @@
     
 }
 .box-accordion {
+
     margin: 7% auto 10% auto;
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
 }
 .photo-accordion {
+    
     width: 49%;
 }
 .acc-photo-1,.acc-photo-2,.acc-photo-3{
+
     background-repeat: no-repeat;
     background-position-x: 25%;
     background-size: cover;
@@ -26,17 +29,21 @@
     height: 390px;
 }
 .acc-photo-1 {
+
     background-image: url(../img/acc-1.jpg);
 }
 .acc-photo-2 {
+
     background-image: url(../img/acc-2.jpg);
     display:none;
 }
 .acc-photo-3 {
+
     background-image: url(../img/acc-3jpg.jpg);
     display:none;
 }
 .accordion {
+
    border-left: 2px solid rgba(153,153, 153, 0.15);
    border-right: 2px solid rgba(153,153, 153, 0.15);
     width: 49%;
