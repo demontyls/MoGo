@@ -6,6 +6,7 @@
 .wwd-text {
     max-width: 900px;
     margin: auto;
+    padding: 0 25px;
     
 }
 .box-accordion {
@@ -135,12 +136,76 @@
 .slider-comment {
     margin-top: 10%;
     background-color: rgba( 153, 153, 153, 0.2);
+    position: relative;
 }
+.slider-wind {
+    margin: auto;
+    overflow: hidden;
+}
+
 .slider-box{
+    position: relative;
     max-width: 1200px;
     margin: auto;
     padding: 70px 0 70px 0;
 }
+.slider-button {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 50%;
+    
+}
+.left {
+    left: 1%;
+     
+    &::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 4px;
+        background-color: #989898;
+        transform: rotateZ(-45deg);
+
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 4px;
+        background-color: #989898;
+        top: 10px;
+        transform: rotateZ(45deg);
+
+    }
+
+}
+.right {
+    right: 3%;
+     
+    &::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 4px;
+        background-color: #989898;
+        transform: rotateZ(45deg);
+
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 4px;
+        background-color: #989898;
+        top: 10px;
+        transform: rotateZ(-45deg);
+
+    }
+
+}
+
+
 .comment {
     text-align: left;
     display: flex;
@@ -166,14 +231,14 @@
     margin-bottom: 20px;
 
 }
-.comment-a {
+.slid-a {
 
 }
 
-.comment-b {
- display: none;
+.slid-b {
+    display: none;
 }
-.comment-c {
+.slid-c {
     display: none;
 }
 .author {
@@ -263,11 +328,28 @@
     .slider-box{
         padding: 20px 0 20px 0;
     }
+
     .message-img{
         background-size: 90%;
         width: 110px;
         height: 110px;
     }
+    .right,.left {
+        right: 3%;
+         
+        &::before {
+            width: 10px;
+            height: 3px;
+            
+        }
+        &::after {
+            width: 10px;
+            height: 3px;
+            top: 7px;
+        }
+    
+    }
+
 
 }
 

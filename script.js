@@ -22,7 +22,7 @@ document.querySelector('.search').addEventListener('click', function(){
 const accBtn = document.querySelectorAll(".acc-card-name");
 const accTextr = document.querySelectorAll(".acc-box-text");
 const accButtonRem = document.querySelectorAll(".acc-btn");
-const headerNav = document.querySelectorAll(".header-nav");
+// const headerNav = document.querySelectorAll(".header-nav");
 
 
       accBtn.forEach(function(item) {
