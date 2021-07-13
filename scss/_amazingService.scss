@@ -2,8 +2,6 @@
     padding:90px 0 ;
     text-align: center;
 }
-.top-heading {
-}
 .services-card {
     display: grid;
     justify-content: space-between;
@@ -11,7 +9,7 @@
 }
 .card {
     text-align: left;
-    padding: 50px 0px;
+    padding: 50px 0;
     display: flex;
     justify-content: space-around;
 }
@@ -19,74 +17,68 @@
     margin: auto;
     @extend%mont-reg-name;
 }
-.card-text {
-}
-.text {
-
-}
-.card-left{
+.card-left {
     width: 70%;
 }
-.card-img-1,
-.card-img-2,
-.card-img-3,
-.card-img-4,
-.card-img-5,
-.card-img-6{
+.img-photography,
+.img-web,
+.img-creativity,
+.img-seo,
+.img-css,
+.img-didgital{
     width: 32px;
     height: 32px;
     background-size: 100%;
 }
-.card-img-1 {
+.img-photography {
     background-image: url(../img/amaz-1.svg);;      
 }
-.card-img-2 {
+.img-web {
     background-image: url(../img/amaz-2.svg);
 }
-.card-img-3 {
+.img-creativity {
     background-image: url(../img/Ama-3.svg);
 }
-.card-img-4 {
+.img-seo {
     background-image: url(../img/amaz-4.svg);
 }
-.card-img-5 {
+.img-css {
     background-image: url(../img/amaz-5.svg);
 }
-.card-img-6 {
+.img-didgital {
     background-image: url(../img/amaz-6.svg);
 }
+
 @media(max-width: 1100px) {
     .amazing-services{
         padding: 70px 0;
     }
 }
+
 @media(max-width: 920px) {
     .amazing-services{
         padding: 50px 0;
     }
-
 }
 
 @media(max-width: 720px) {
     .amazing-services{
         padding: 30px 0;
     }
-    .services-card{
+    .services-card {
         grid-template-columns: 50% 50%;
     }
-
 }
 
 @media(max-width: 520px) {
     .amazing-services{
         padding: 20px 0;
     }
-    .card-text{
+    .card-text {
         font-size: 12px;
         line-height: 14px;
     }
-    .card-name{
+    .card-name {
         font-size: 12px;
     }
-
 }

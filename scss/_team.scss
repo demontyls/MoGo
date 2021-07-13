@@ -1,22 +1,20 @@
 $color_1: #95e1d3;
 $color_2: #fce38a;
 $color_3: #f38181;
-.team{
+.team {
     margin: 100px auto 100px auto;
     text-align: center;
 }
-
 .team-phot {
     margin: 90px auto 90px auto;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    
 }
-.personal-name{
+.personal-name {
     @extend%mont-reg-name;
 }
-.personal-text{
+.personal-text {
     font-style: italic;
 }
 .personal-card {
@@ -32,12 +30,11 @@ $color_3: #f38181;
     top: 0;
     left: 0;
 
-        &:hover{
-            box-shadow: 10px 10px 0px  #95e1d3;
-            top: -10px;
-            left: -10px;
-            transition: 500ms;
-            
+    &:hover{
+        box-shadow: 10px 10px 0px  #95e1d3;
+        top: -10px;
+        left: -10px;
+        transition: 500ms; 
         }
 
         &::after{
@@ -45,43 +42,40 @@ $color_3: #f38181;
 	        opacity: 0;
             transition: opacity 0.7s ease-in-out;
         }
-        &:hover:after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;    
-            position: absolute;
-            top: 0;    
-            left: 0;   
-            background: transparent;
-            background-image: linear-gradient(to top, $color_2, $color_3);    
-            opacity: 0.8;   
-            
-            
+            &:hover:after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;    
+                position: absolute;
+                top: 0;    
+                left: 0;   
+                background: transparent;
+                background-image: linear-gradient(to top, $color_2, $color_3);    
+                opacity: 0.8;   
+            }
+                &:hover:before {
+                    content: "";
+                    display: inline-block;
+                    width: 100%;
+                    height: 52px;
+                    margin: -26px 0 0 -26px;  
+                    position: absolute;    
+                    top: 50%;
+                    left: 40%;    
+                    background: url(../img/1.svg) 0 0 no-repeat;
+                    z-index: 100;
 
-        }
-        &:hover:before {
-            content: "";
-            display: inline-block;
-            width: 100%;
-            height: 52px;
-            margin: -26px 0 0 -26px;  
-            position: absolute;    
-            top: 50%;
-            left: 40%;    
-            background: url(../img/1.svg) 0 0 no-repeat;
-            z-index: 100;
-
-        }
+                }
     
 }
-.michael-photo{
+.michael-photo {
     background-image: url(../img/teamphoto3.jpg);
 }
-.campbell-photo{
+.campbell-photo {
     background-image: url(../img/teamphoto2.jpg);
 }
-.dix-photo{
+.dix-photo {
     background-image: url(../img/teamphoto1.jpg);
 }
 .brend {
@@ -94,28 +88,25 @@ $color_3: #f38181;
     margin: auto;
 }
 
-
 @media(max-width: 900px) {
     .team-photo {
         background-position: center;
         height: 400px;
     }
     .team {
-        margin: 70px auto 0px auto;
+        margin: 70px auto 0 auto;
     }
     .team-phot {
     margin: 45px auto 45px auto;
     }
 }
 
-
 @media(max-width: 800px) {
     .team-phot {
-        // height: 350px;
-        margin: 45px auto 0px auto;
+        margin: 45px auto 0 auto;
     }
-
 }
+
 @media(max-width: 700px) {
     .team-phot {
         margin-top: 45px;
@@ -123,16 +114,13 @@ $color_3: #f38181;
         display: block;
     }
     .team {
-        margin: 20px auto 0px auto;
+        margin: 20px auto 0 auto;
     }
     .brend {
         background-size: cover;
     }
-
-
     .personal-card {
         width: 70%;
         margin: auto;
     }
-
 }

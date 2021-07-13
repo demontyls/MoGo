@@ -1,15 +1,13 @@
 $color_1: #95e1d3;
 $color_2: #fce38a;
 $color_3: #f38181;
+
 @mixin button ( $c,$bc) {
     color: $c;
     border: $bc;
 }
-
-
-.heading{
+.heading {
     @extend%mont-bold;
-
     &::after {
         content: '';
         width: 60px;
@@ -18,24 +16,21 @@ $color_3: #f38181;
         background-color:$color_3;
         margin: 0 auto;
         margin-top: 40px;
-    
     }   
-    
-        .top-heading{
+        .top-heading {
              @extend%kaushan;
-    }
+        }
 }
 .story {
     text-align: center;
     margin-top: 80px;
 }
-
 .text {
     @extend%robo-reg;
     margin:auto;
     max-width: 900px;
 }
-.story-text{
+.story-text {
     max-width: 90%;
     padding: 0 10px;
 }
@@ -45,7 +40,9 @@ $color_3: #f38181;
     max-width: 1200px;
     margin: 100px auto;
 }
-.story-img-a,.story-img-b,.story-img-c {
+.img-macbook,
+.img-phone,
+.img-camera{
     width: 30%;
     background-size: inherit;
     height: 237px;
@@ -54,16 +51,14 @@ $color_3: #f38181;
     cursor: pointer;
     top: 0;
     left: 0;
-
-        &:hover{
+        &:hover {
             box-shadow: 10px 10px 0px  #95e1d3;
             top: -10px;
             left: -10px;
             transition: 500ms;
             
         }
-
-        &::after{
+        &::after {
             content: "";
 	        opacity: 0;
             transition: opacity 0.7s ease-in-out;
@@ -78,10 +73,7 @@ $color_3: #f38181;
             left: 0;   
             background: transparent;
             background-image: linear-gradient(to top, $color_2, $color_3);    
-            opacity: 0.8;   
-            
-            
-
+            opacity: 0.8;     
         }
         &:hover:before {
             content: "";
@@ -94,30 +86,22 @@ $color_3: #f38181;
             left: 40%;    
             background: url(../img/1.svg) 0 0 no-repeat;
             z-index: 100;
-
-        }
-    
+        }   
 }
-.story-img-a {
+.img-macbook {
     background-image: url(../img/story-1.jpg);
 }
-
-.story-img-b {
+.img-phone {
     background-image: url(../img/story-2.jpg);
-    
 }
-
-.story-img-c {
-    background-image: url(../img/story-3.jpg);
-       
+.img-camera {
+    background-image: url(../img/story-3.jpg);    
 }
-
 .back-line {
-    background-image: url(../img/border.svg);
-    margin: 0 auto;
     max-width: 1920px;
+    margin: 0 auto;
+    background-image: url(../img/border.svg); 
 }
-
 .statistics-line {
     max-width: 1200px;
     margin: 0 auto;
@@ -126,22 +110,20 @@ $color_3: #f38181;
 .statistics {
     display: flex;
     justify-content:space-between;
-    padding: 0;
-    
+    padding: 0; 
 }
 .stat-box {
     width: 15%;
     text-decoration: none;
-    list-style: none;
-    
+    list-style: none;  
 }
-.stat-box{
+.stat-box {
     border-right: solid 1px #fff;
     padding: 35px;
 
          &:first-child{
         border-left: solid 1px #fff;
-    }
+        }
 }
 .namb {
     font-family: "Montserrat";
@@ -149,138 +131,134 @@ $color_3: #f38181;
     font-size: 72px;
     color: #fff;
     margin: auto
-
 }
 .stat-text {
     @extend%mont-reg;
 }
-@media(max-width: 1100px){
-    .story-img-a,.story-img-b,.story-img-c {
+@media(max-width: 1100px) {
+    .img-macbook,
+    .img-phone,
+    .img-camera {
         width: 33%;
-        
-        }
-        .story{
-            margin-top: 70px;
-        }
-        .team-img{
-            margin: 70px auto;
-        }
-
+    }
+    .story {
+        margin-top: 70px;
+    }
+    .team-img {
+        margin: 70px auto;
+    }
 }
+
 @media(max-width: 1000px) {
-    .story-img-a,.story-img-b,.story-img-c {
+    .img-macbook,
+    .img-phone,
+    .img-camera {
         height: 210px;
 
-
-        &:hover{
+         &:hover{
             box-shadow: 4px 4px 0px  #95e1d3;
             top: -4px;
             left: -4px;
-            transition: 500ms;
-            
+            transition: 500ms;     
+            }
         }
-        
-        }
-        .namb{
-            font-size: 58px;
-        }
-        .stat-text{
-            font-size: 12px;
-            margin: auto;
-        }
-        .stat-box {
-            padding: 28px;
-        }
-        .story{
-            margin-top: 60px;
-        }
-        .team-img{
-            margin: 60px auto;
-        }
-
-
-
+    .namb {
+        font-size: 58px;
+    }
+    .stat-text {
+        font-size: 12px;
+        margin: auto;
+    }
+    .stat-box {
+        padding: 28px;
+    }
+    .story {
+        margin-top: 60px;
+    }
+    .team-img {
+        margin: 60px auto;
+    }
 }
-
-
 
 @media(max-width: 720px) {
     .heading{
         font-size: 25px;
 
-
         .top-heading{
             font-size: 20px;
         }
     }
-    .team-img{
+    .team-img {
         margin: 40px auto;
     }
-    .namb{
+    .namb {
         font-size: 48px;
     }
-    .stat-text{
+    .stat-text {
         font-size: 12px;
         margin: auto;
     }
     .stat-box {
         padding: 15px;
     }
-    .story{
+    .story {
         margin-top: 50px;
     }
-    .team-img{
+    .team-img {
         margin: 50px auto;
     }
 }
+
 @media(max-width: 650px) {
     .team-img{
         display: block;
-        
     }
-    .team-img{
+    .team-img {
         margin: 30px auto;
     }
-    .story-img-a,.story-img-b,.story-img-c{
+    .img-macbook,
+    .img-phone,
+    .img-camera {
         width: 60%;
         margin: 5px auto;
     }
-    .story{
+    .story {
         margin-top: 30px;
     }
-
 }
+
 @media(max-width: 520px) {
-    .story{
+    .story {
         margin-top: 15px;
     }
-    .namb{
+    .namb {
         font-size: 25px;
     }
-    .team-img{
+    .team-img {
         margin: 25px auto;
     }
-    .stat-text{
+    .stat-text {
         font-size: 7px;
         margin: auto;
     }
     .stat-box {
         padding: 10px;
     }
-    .story-img-a{
+    .img-macbook {
         width: 380px;
     }
-    .story-img-b,.story-img-c{
+    
+    .img-phone,
+    .img-camera {
         display: none;
     }
-
 }
+
 @media(max-width: 380px){
     .team-img{
         margin: 10px auto;
     }
-    .story-img-a{
+    .img-macbook{
         width: 100%;
     }
-
 }

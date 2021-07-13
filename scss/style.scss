@@ -15,52 +15,52 @@
 //          } В скобках можно указывать несколько функций 
 //          подключение миксина 
 //          @include name ($clr,$...,$...)
-%robo-reg{
+%robo-reg {
     font-family: "roboto";
     font-weight: 400;
     color: #999999;
     line-height: 24px;
     font-size: 15px;
 }
-%robo-li{
+%robo-li {
     font-family: "roboto";
     font-weight: 300;
     color: #999999;
     line-height: 36px;
     font-size: 24px;
 }
-%kaushan{
+%kaushan {
     font-family:'Kaushan Script';
     font-weight: 400;
     font-size: 24px;
     color: #363636;
 }
-%mont-bold{
+%mont-bold {
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 30px;
     color: #363636;
 }
-%mont-reg-text{
+%mont-reg-text {
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 14px;
     color: #ffffff;
 }
-%mont-bold-namb{
+%mont-bold-namb {
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 20px;
     color: #ffffff;
 }
-%mont-reg{
+%mont-reg {
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 14px;
     color: #ffffff;
 }
 
-%mont-reg-name{
+%mont-reg-name {
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 14px;
@@ -74,7 +74,7 @@ $color_3: #f38181;
     max-width: 1200px;
     margin: 0 auto;   
 }
-.body{
+.body {
     margin: 0;
 }
 @import "_header";

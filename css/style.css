@@ -570,7 +570,9 @@
   margin: 100px auto;
 }
 
-.story-img-a, .story-img-b, .story-img-c {
+.img-macbook,
+.img-phone,
+.img-camera {
   width: 30%;
   background-size: inherit;
   height: 237px;
@@ -581,7 +583,9 @@
   left: 0;
 }
 
-.story-img-a:hover, .story-img-b:hover, .story-img-c:hover {
+.img-macbook:hover,
+.img-phone:hover,
+.img-camera:hover {
   -webkit-box-shadow: 10px 10px 0px  #95e1d3;
           box-shadow: 10px 10px 0px  #95e1d3;
   top: -10px;
@@ -590,14 +594,18 @@
   transition: 500ms;
 }
 
-.story-img-a::after, .story-img-b::after, .story-img-c::after {
+.img-macbook::after,
+.img-phone::after,
+.img-camera::after {
   content: "";
   opacity: 0;
   -webkit-transition: opacity 0.7s ease-in-out;
   transition: opacity 0.7s ease-in-out;
 }
 
-.story-img-a:hover:after, .story-img-b:hover:after, .story-img-c:hover:after {
+.img-macbook:hover:after,
+.img-phone:hover:after,
+.img-camera:hover:after {
   content: "";
   display: block;
   width: 100%;
@@ -611,7 +619,9 @@
   opacity: 0.8;
 }
 
-.story-img-a:hover:before, .story-img-b:hover:before, .story-img-c:hover:before {
+.img-macbook:hover:before,
+.img-phone:hover:before,
+.img-camera:hover:before {
   content: "";
   display: inline-block;
   width: 100%;
@@ -624,22 +634,22 @@
   z-index: 100;
 }
 
-.story-img-a {
+.img-macbook {
   background-image: url(../img/story-1.jpg);
 }
 
-.story-img-b {
+.img-phone {
   background-image: url(../img/story-2.jpg);
 }
 
-.story-img-c {
+.img-camera {
   background-image: url(../img/story-3.jpg);
 }
 
 .back-line {
-  background-image: url(../img/border.svg);
-  margin: 0 auto;
   max-width: 1920px;
+  margin: 0 auto;
+  background-image: url(../img/border.svg);
 }
 
 .statistics-line {
@@ -684,7 +694,9 @@
 }
 
 @media (max-width: 1100px) {
-  .story-img-a, .story-img-b, .story-img-c {
+  .img-macbook,
+  .img-phone,
+  .img-camera {
     width: 33%;
   }
   .story {
@@ -696,10 +708,14 @@
 }
 
 @media (max-width: 1000px) {
-  .story-img-a, .story-img-b, .story-img-c {
+  .img-macbook,
+  .img-phone,
+  .img-camera {
     height: 210px;
   }
-  .story-img-a:hover, .story-img-b:hover, .story-img-c:hover {
+  .img-macbook:hover,
+  .img-phone:hover,
+  .img-camera:hover {
     -webkit-box-shadow: 4px 4px 0px  #95e1d3;
             box-shadow: 4px 4px 0px  #95e1d3;
     top: -4px;
@@ -760,7 +776,9 @@
   .team-img {
     margin: 30px auto;
   }
-  .story-img-a, .story-img-b, .story-img-c {
+  .img-macbook,
+  .img-phone,
+  .img-camera {
     width: 60%;
     margin: 5px auto;
   }
@@ -786,10 +804,11 @@
   .stat-box {
     padding: 10px;
   }
-  .story-img-a {
+  .img-macbook {
     width: 380px;
   }
-  .story-img-b, .story-img-c {
+  .img-phone,
+  .img-camera {
     display: none;
   }
 }
@@ -798,7 +817,7 @@
   .team-img {
     margin: 10px auto;
   }
-  .story-img-a {
+  .img-macbook {
     width: 100%;
   }
 }
@@ -820,7 +839,7 @@
 
 .card {
   text-align: left;
-  padding: 50px 0px;
+  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -836,38 +855,38 @@
   width: 70%;
 }
 
-.card-img-1,
-.card-img-2,
-.card-img-3,
-.card-img-4,
-.card-img-5,
-.card-img-6 {
+.img-photography,
+.img-web,
+.img-creativity,
+.img-seo,
+.img-css,
+.img-didgital {
   width: 32px;
   height: 32px;
   background-size: 100%;
 }
 
-.card-img-1 {
+.img-photography {
   background-image: url(../img/amaz-1.svg);
 }
 
-.card-img-2 {
+.img-web {
   background-image: url(../img/amaz-2.svg);
 }
 
-.card-img-3 {
+.img-creativity {
   background-image: url(../img/Ama-3.svg);
 }
 
-.card-img-4 {
+.img-seo {
   background-image: url(../img/amaz-4.svg);
 }
 
-.card-img-5 {
+.img-css {
   background-image: url(../img/amaz-5.svg);
 }
 
-.card-img-6 {
+.img-didgital {
   background-image: url(../img/amaz-6.svg);
 }
 
@@ -948,7 +967,7 @@
   width: 49%;
 }
 
-.acc-photo-1, .acc-photo-2, .acc-photo-3 {
+.acc-photo {
   background-repeat: no-repeat;
   background-position-x: 25%;
   background-size: cover;
@@ -956,18 +975,8 @@
   height: 390px;
 }
 
-.acc-photo-1 {
+.acc-photo {
   background-image: url(../img/acc-1.jpg);
-}
-
-.acc-photo-2 {
-  background-image: url(../img/acc-2.jpg);
-  display: none;
-}
-
-.acc-photo-3 {
-  background-image: url(../img/acc-3jpg.jpg);
-  display: none;
 }
 
 .accordion {
@@ -1058,12 +1067,10 @@
   border-radius: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: #95e1d3;
@@ -1170,14 +1177,6 @@
   margin: 0;
   font-style: italic;
   margin-bottom: 20px;
-}
-
-.slid-b {
-  display: none;
-}
-
-.slid-c {
-  display: none;
 }
 
 .author {
@@ -1394,7 +1393,7 @@
     height: 400px;
   }
   .team {
-    margin: 70px auto 0px auto;
+    margin: 70px auto 0 auto;
   }
   .team-phot {
     margin: 45px auto 45px auto;
@@ -1403,7 +1402,7 @@
 
 @media (max-width: 800px) {
   .team-phot {
-    margin: 45px auto 0px auto;
+    margin: 45px auto 0 auto;
   }
 }
 
@@ -1414,7 +1413,7 @@
     display: block;
   }
   .team {
-    margin: 20px auto 0px auto;
+    margin: 20px auto 0 auto;
   }
   .brend {
     background-size: cover;
@@ -1571,14 +1570,6 @@
   background-size: 100%;
 }
 
-.comment-b {
-  display: none;
-}
-
-.comment-c {
-  display: none;
-}
-
 .gallery-box-mobil {
   width: 100%;
   display: -webkit-box;
@@ -1675,7 +1666,7 @@
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   margin: 0 auto;
-  padding: 0px 0px 120px 0px;
+  padding: 0 0 120px 0;
 }
 
 .people-card {
@@ -1772,6 +1763,10 @@
   text-align: left;
 }
 
+.blog-card {
+  width: 33%;
+}
+
 .blog-img {
   width: 95%;
   height: 250px;
@@ -1780,15 +1775,15 @@
   position: relative;
 }
 
-.blog-a {
+.img-lorem {
   background-image: url(../img/blogimg1.jpg);
 }
 
-.blog-b {
+.img-sed {
   background-image: url(../img/blokimg2.jpg);
 }
 
-.blog-c {
+.img-incididunt {
   background-image: url(../img/blogimg3.jpg);
 }
 
@@ -1870,9 +1865,12 @@
 @media (max-width: 550px) {
   .blog-box {
     display: block;
+    padding: 0 15px;
   }
   .blog-card {
-    margin: 15px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    width: 100%;
   }
   .blog-img {
     width: 100%;
@@ -2055,7 +2053,7 @@
 }
 
 .follow {
-  margin: 20px 10px 20px 0px;
+  margin: 20px 10px 20px 0;
 }
 
 .facebook {

@@ -1,4 +1,4 @@
-.devices{
+.devices {
     background-image: url(../img/feauture.jpg);
     max-width: 1920px;
     text-align: center;
@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    &::after{
+    &::after {
         background-color: #f8f8f8;
     }
 }
